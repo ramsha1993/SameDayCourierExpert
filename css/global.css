@@ -17,6 +17,10 @@ body {
 }
 
 h1,
-h2 {
+h2,h3,h5 {
     font-family: 'fonttwo', sans-serif;
+}
+.py-6{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }

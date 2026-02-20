@@ -4,6 +4,9 @@
      --crb-blue: #00baeb;
      --crb-dark: #1a2744;
      --crb-mid: #2c3e6b;
+       --crb-blue-dark: 213 85% 20%;       /* HSL */
+  --crb-blue-dark-alpha: 213 85% 20% / 1;
+    --secondary: hsl(213 79% 29%); 
  }
 
 
@@ -123,3 +126,27 @@
 
      margin-left: 0;
  }
+
+ .section-3{
+  background-image: linear-gradient(
+    to bottom,                 /* direction */
+    hsl(var(--crb-blue-dark)), /* start color */
+    hsl(var(--crb-blue-dark) / 1) /* end color with alpha */
+  ); }
+
+  
+  .bg-gradient-to-r {
+  background-image: linear-gradient(to right,     rgba(0, 119, 181, 0.5),
+    rgba(0, 88, 133, 0.5));
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.2); /* white 20% */
+  backdrop-filter: blur(4px);                 /* small blur */
+  -webkit-backdrop-filter: blur(4px);         /* Safari support */
+  border-radius: 0.5rem;                      /* optional */
+}
+
+.bg-secondary{
+    background-color: var(--secondary)!important;
+}
