@@ -1,0 +1,27 @@
+# Dependency Directories
+node_modules/
+bower_components/
+
+# Environment Files
+.env
+*.env.local
+
+# Build/Dist Folders (if using a bundler like Vite or Webpack)
+dist/
+build/
+out/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE Configs
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

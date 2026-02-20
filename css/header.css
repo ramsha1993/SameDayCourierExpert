@@ -1,0 +1,160 @@
+:root {
+    --crb-blue: #00baeb;
+    --crb-dark: #1a2744;
+    --crb-mid: #2c3e6b;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Logo */
+.logo-letter {
+    width: 32px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.logo-c {
+    background: var(--crb-blue);
+    color: #fff;
+}
+
+.logo-r {
+    background: #fff;
+    color: var(--crb-blue);
+    border: 2px solid var(--crb-blue);
+}
+
+.logo-b {
+    background: var(--crb-dark);
+    color: #fff;
+}
+
+.logo-tagline {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 20px !important;
+    color: var(--crb-dark) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--crb-blue) !important;
+}
+
+/* Buttons */
+.btn-crb {
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.btn-crb-primary {
+    background: var(--crb-blue);
+    color: #fff;
+}
+
+.btn-crb-primary:hover {
+    background: transparent;
+}
+
+.btn-crb-outline {
+    border: 1px solid var(--crb-blue);
+    color: var(--crb-blue);
+}
+
+.btn-crb-outline:hover {
+    background: var(--crb-blue);
+    color: #fff;
+}
+
+/* Mega menu */
+/* Mega menu container */
+/* Make dropdown visible on hover with smooth fade/slide */
+
+
+
+
+.mega-menu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+.nav-item.dropdown:hover>.mega-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+.dd-item {
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.3s ease;
+    color: #212529;
+    text-decoration: none;
+}
+
+.dd-item:hover {
+    background-color: rgba(200, 16, 46, 0.05);
+    color: #c8102e !important;
+}
+
+.dd-item i {
+    font-size: 1rem;
+}
+
+/* Top bar */
+.top-bar {
+    background: var(--crb-dark);
+    color: #fff;
+    font-size: 13px;
+}
+
+/* Ticker */
+.ticker {
+    background: var(--crb-blue);
+    color: #fff;
+    overflow: hidden;
+}
+
+.ticker-track {
+    display: flex;
+    animation: ticker 30s linear infinite;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-50%)
+    }
+}

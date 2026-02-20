@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'fontone';
+    src: url('/fonts/inter-variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fonttwo';
+    src: url('/fonts/space-grotesk-variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'fontone', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'fonttwo', sans-serif;
+}

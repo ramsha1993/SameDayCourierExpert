@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/">
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/herosection.css">
+
+</head>
+
+<body>
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>Professional Door Solutions Nationwide</span>
+            <div class="d-flex gap-3">
+                <a href="tel:01709525401" class="text-white text-decoration-none">
+                    <i class="bi bi-telephone-fill me-1"></i> 01709 525 401
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="./images/logo/Color@3x.png" alt="logo" class="img-fluid" width="180px" height="70px">
+            </a>
+
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+
+                        <div class="dropdown-menu mega-menu col-10 p-4 shadow-lg border-0"
+                            aria-labelledby="servicesDropdown">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <h6 class="text-uppercase text-muted mb-4 fw-bold"
+                                            style="font-size: 11px; letter-spacing: 1px;">Door Systems</h6>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-wrench text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">Roller Shutter Repairs</div>
+                                                <small class="text-muted d-block">Emergency & planned shutter
+                                                    maintenance</small>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-shield-check text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">Roller Shutter Installation</div>
+                                                <small class="text-muted d-block">Custom security shutters for all
+                                                    sectors</small>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-buildings text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">Industrial Doors</div>
+                                                <small class="text-muted d-block">Heavy-duty doors for
+                                                    warehouses</small>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-lightning-charge text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">High-Speed Doors</div>
+                                                <small class="text-muted d-block">Rapid-roll doors for climate
+                                                    control</small>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <h6 class="text-uppercase text-muted mb-4 fw-bold"
+                                            style="font-size: 11px; letter-spacing: 1px;">Support Services</h6>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-exclamation-triangle text-danger fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-danger mb-0">Emergency Repairs</div>
+                                                <small class="text-muted d-block">24/7 rapid response nationwide</small>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-gear text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">Service & Maintenance</div>
+                                                <small class="text-muted d-block">PPM contracts and legal
+                                                    compliance</small>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-flex align-items-start gap-3 mb-4 text-decoration-none">
+                                            <i class="bi bi-clipboard-check text-secondary fs-5 mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold text-dark mb-0">Surveys & Inspections</div>
+                                                <small class="text-muted d-block">Safety audits and door health
+                                                    checks</small>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="p-4 rounded-4 h-100 d-flex flex-column"
+                                            style="background-color: #f8fafc; border: 1px solid #e2e8f0;">
+                                            <div class="mb-3">
+                                                <div class="d-flex align-items-center gap-2 mb-3">
+                                                    <i class="bi bi-telephone-outbound text-danger fs-5"></i>
+                                                    <h6 class="text-dark fw-bold mb-0">24/7 Emergency</h6>
+                                                </div>
+                                                <p class="small text-muted mb-4" style="line-height: 1.6;">
+                                                    Rapid response for urgent door repairs. Our engineers are on call
+                                                    around the clock.
+                                                </p>
+                                            </div>
+                                            <div class="mt-auto">
+                                                <a href="tel:01709525401"
+                                                    class="fw-bold text-danger text-decoration-none d-block mb-2"
+                                                    style="font-size: 1.1rem;">
+                                                    01709 525 401
+                                                </a>
+                                                <a href="#" class="text-primary fw-bold text-decoration-none small">
+                                                    View all services <i class="bi bi-arrow-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Sectors</a>
+
+
+                        <div class="dropdown-menu mega-menu col-8 p-4 shadow-lg border-0"
+                            aria-labelledby="servicesDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <h6 class="text-uppercase text-muted mb-4 fw-bold"
+                                            style="font-size: 12px; letter-spacing: 1px;">Industries We Serve</h6>
+
+                                        <div class="row g-4">
+                                            <div class="col-12 d-flex align-items-start gap-3 mb-3">
+                                                <i class="bi bi-shop text-primary fs-4 mt-1"></i>
+                                                <div>
+                                                    <div class="fw-bold text-dark">Retail & Leisure</div>
+                                                    <small class="text-muted">High-street stores & shopping
+                                                        centres</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 d-flex align-items-start gap-3 mb-3">
+                                                <i class="bi bi-heart-pulse text-primary fs-4 mt-1"></i>
+                                                <div>
+                                                    <div class="fw-bold text-dark">NHS & Healthcare</div>
+                                                    <small class="text-muted">Hospitals, clinics & care
+                                                        facilities</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 d-flex align-items-start gap-3 mb-3">
+                                                <i class="bi bi-buildings text-primary fs-4 mt-1"></i>
+                                                <div>
+                                                    <div class="fw-bold text-dark">Facilities Management</div>
+                                                    <small class="text-muted">Multi-site portfolio management</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 d-flex align-items-start gap-3 mb-3">
+                                                <i class="bi bi-mortarboard text-primary fs-4 mt-1"></i>
+                                                <div>
+                                                    <div class="fw-bold text-dark">Education</div>
+                                                    <small class="text-muted">Schools, colleges & universities</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 d-flex align-items-start gap-3 mb-3">
+                                                <i class="bi bi-truck text-primary fs-4 mt-1"></i>
+                                                <div>
+                                                    <div class="fw-bold text-dark">Logistics</div>
+                                                    <small class="text-muted">Warehouses & distribution centres</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5">
+                                        <div class="p-4 rounded-4 h-100 d-flex flex-column"
+                                            style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border: 1px solid #eee;">
+                                            <div class="mb-3">
+                                                <div class="d-flex align-items-center gap-2 mb-3">
+                                                    <i class="bi bi-quote text-primary fs-3"></i>
+                                                    <h6 class="text-primary fw-bold mb-0">CLIENT SUCCESS</h6>
+                                                </div>
+                                                <p class="fst-italic text-muted" style="line-height: 1.6;">
+                                                    "CRB manages door maintenance across our entire UK portfolio. Their
+                                                    SLA compliance and proactive approach have reduced our emergency
+                                                    callouts by 40%."
+                                                </p>
+                                            </div>
+
+                                            <div class="mt-auto">
+                                                <div class="text-danger mb-2">
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                                <div class="fw-bold text-dark small">Facilities Director</div>
+                                                <div class="text-muted small mb-3">DHL Supply Chain</div>
+
+                                                <a href="#"
+                                                    class="text-primary fw-bold text-decoration-none d-flex align-items-center gap-2">
+                                                    View all sectors <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Area we cover</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-crb btn-crb-outline">Report Issue</a>
+                    <a href="#" class="btn btn-crb btn-crb-primary">Contact Us</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- TICKER -->
+    <div class="ticker py-2">
+        <div class="ticker-track text-nowrap">
+            <div class="px-4">500+ Parts On Every Van</div>
+            <div class="px-4">2-Hour Emergency Guarantee</div>
+            <div class="px-4">No Fix, No Fee</div>
+            <div class="px-4">24/7 Response</div>
+            <div class="px-4">500+ Parts On Every Van</div>
+            <div class="px-4">2-Hour Emergency Guarantee</div>
+        </div>
+    </div>
+    <!-- Hero section -->
+    <section class="hero-section d-flex align-items-center py-5">
+        <div class="container position-relative py-4 py-lg-5">
+            <div class="row align-items-center gy-5">
+
+                <!-- Left Copy -->
+                <div class="col-lg-6 col-xl-6">
+                    <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4 fw-semibold"
+                        style="background:rgba(255,255,255,.12); color:#fff; font-size:13px; border:1px solid rgba(255,255,255,.2);">
+                        <span class="pulse-dot rounded-circle d-inline-block"
+                            style="width:8px;height:8px;background:#22c55e;"></span>
+                        Engineers Available Now
+                    </div>
+                    <h1 class="fw-bold text-white lh-sm mb-3 " style=" font-size:clamp(2.6rem,5.5vw,4rem);">
+                        Commercial Door<br><span style="color:#c8102e;">Specialists</span>
+                    </h1>
+                    <p class="text-white mb-4"
+                        style="font-size:clamp(15px,1.6vw,17px); opacity:.9; max-width:480px; line-height:1.7;">
+                        The trusted partner for facilities managers and national retailers. Roller shutters, automatic
+                        doors, and 24/7 emergency repairs across 1,200+ UK sites.
+                    </p>
+
+                    <div class="row g-2 mb-4" style="max-width:520px;">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-check-circle-fill text-danger flex-shrink-0"></i> 40+ Years Industry
+                                Experience
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-check-circle-fill text-danger flex-shrink-0"></i> P1 Emergency: 2hr
+                                Response
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-check-circle-fill text-danger flex-shrink-0"></i> Fixed First Visit
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-check-circle-fill text-danger flex-shrink-0"></i> Live Engineer Tracking
+                                & Accurate ETAs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+
+                        <!-- Call Button -->
+                        <a href="tel:01709525401"
+                            class="btn btn-danger fw-bold px-4 py-3 d-inline-flex align-items-center gap-2 transition-btn">
+
+                            <i class="bi bi-telephone-fill"></i>
+                            01709 525 401
+                            <i class="bi bi-arrow-right arrow-icon text-white"></i>
+                        </a>
+
+                        <!-- Services Button -->
+                        <a href="#"
+                            class="btn btn-outline-light hover:!bg-[#fff3] fw-bold px-4 py-3 d-inline-flex align-items-center gap-2 transition-btn transition-btn-two">
+
+                            Our Services
+                            <i class="bi bi-arrow-right arrow-icon"></i>
+                        </a>
+
+                    </div>
+                    <div class="row col-12 mb-4" style="max-width:520px;">
+                        <div class="col-4">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-shield text-danger flex-shrink-0"></i> £10M Public Liability
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex align-items-center gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-clock-history text-danger flex-shrink-0"></i> 24/7 Response
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex align-items-start gap-2 text-white" style="font-size:13.5px;">
+                                <i class="bi bi-award-fill text-danger flex-shrink-0"></i>Constructionline Gold
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Quote Form -->
+                <div class="col-lg-6 col-xl-6">
+                    <div class="bg-white rounded-4 shadow-lg p-4 hero-form">
+                        <div class="text-center mb-4">
+                            <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-1 mb-3 fw-semibold"
+                                style="background:#ecfdf5; color:#16a34a; font-size:12.5px; border:1px solid #bbf7d0;">
+                                <i class="bi bi-clock-fill"></i> Quick Response
+                            </div>
+                            <h2 class="fw-bold mb-1" style="font-size:1.6rem; color:var(--crb-dark);">Get a Free Quote
+                            </h2>
+                            <p class="text-muted mb-0" style="font-size:13.5px;">Free survey &bull; Written quote within
+                                48hrs &bull; Zero obligation</p>
+                        </div>
+
+                        <div class="mb-3"><input type="text" class="form-control" placeholder="Your name *" required>
+                        </div>
+                        <div class="mb-3"><input type="email" class="form-control" placeholder="Email address *"
+                                required></div>
+                        <div class="mb-3"><input type="tel" class="form-control" placeholder="Phone number *" required>
+                        </div>
+
+
+                        <div class="form-check d-flex align-items-center gap-2 mb-4">
+                            <input class="form-check-input mt-0 flex-shrink-0" type="checkbox" id="privacyCheck"
+                                style="width:18px;height:18px;">
+                            <label class="form-check-label text-muted" for="privacyCheck" style="font-size:13.5px;">
+                                I agree to the <a href="#" class="text-danger fw-semibold text-decoration-none">Privacy
+                                    Policy</a>
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-danger  w-100 fw-bold d-flex align-items-center justify-content-center gap-2 py-3"
+                            style="font-size:16px; border-radius:8px; letter-spacing:.3px;">
+                            Request Quote <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <p class="text-center mt-3 mb-0" style="font-size:13px; color:#555;">
+                            <span class="text-warning fw-bold">&#9733;</span>
+                            <span class="fw-semibold" style="color:var(--crb-dark);"> 4.9/5</span>
+                            <span class="text-muted"> from 200+ reviews &bull; Responses within 2 hours</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container py-3">
+
+            <!-- Section Header -->
+            <div class="d-flex align-items-end justify-content-between mb-4 flex-wrap gap-3">
+                <div>
+                    <p class="fw-bold text-uppercase mb-1" style="font-size:12px; letter-spacing:1.5px; color:#c8102e;">
+                        What We Do</p>
+                    <h2 class="fw-bold mb-0"
+                        style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(1.8rem,3.5vw,2.5rem); color:#1a2744;">
+                        Commercial Door Services</h2>
+                </div>
+                <a href="#" class="text-decoration-none fw-semibold d-flex align-items-center gap-1"
+                    style="color:#1a2744; font-size:14px; white-space:nowrap;">
+                    View all services <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Grid -->
+            <div class="row g-4">
+
+                <!-- ── COL 1: Emergency Featured Card ── -->
+                <div class="col-12 col-md-5 col-lg-6">
+                    <div class="emerg-card d-flex flex-column justify-content-end p-4 h-100" style="min-height:460px;">
+                        <div class="position-relative z-1">
+
+                            <!-- Badge -->
+                            <div
+                                class="d-inline-flex align-items-center bg-danger text-white text-small gap-2 rounded-pill px-3 py-1 mb-3 fw-semibold">
+                                <span class="rounded-circle d-inline-block"
+                                    style="width:7px;height:7px;background:#fff;"></span>
+                                24/7 RESPONSE
+                            </div>
+
+                            <h3 class="fw-bold text-white mb-2"
+                                style="font-family:'Barlow Condensed',sans-serif; font-size:1.9rem;">Emergency Repairs
+                            </h3>
+                            <p class="text-white mb-3 opacity-90" style="font-size:14px; line-height:1.65;">
+                                Door stuck at 2am? We'll be there. Nationwide coverage, live tracking, and parts on the
+                                van to fix it first visit.
+                            </p>
+
+                            <!-- Mini trust -->
+                            <div class="d-flex gap-3 mb-4 flex-wrap">
+                                <span class="d-flex align-items-center gap-1 text-white small opacity-75">
+                                    <i class="bi bi-clock text-danger"></i> 2hr P1 Response
+                                </span>
+                                <span class="d-flex align-items-center gap-1 text-white small opacity-75">
+                                    <i class="bi bi-shield-check text-danger"></i> SLA Backed
+                                </span>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex flex-column gap-2">
+                                <a href="tel:01709525401"
+                                    class="btn btn-danger fw-bold d-flex align-items-center justify-content-center gap-2 py-2 rounded"
+                                    style="font-size:14px;">
+                                    <i class="bi bi-telephone-fill"></i> Call Now
+                                </a>
+                                <a href="#"
+                                    class="btn fw-semibold d-flex align-items-center justify-content-center gap-2 py-2 rounded"
+                                    style="font-size:13.5px; background:rgba(255,255,255,.12); color:#fff; border:1.5px solid rgba(255,255,255,.3);">
+                                    Learn more about emergency repairs <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── COL 2: Service Cards Grid ── -->
+                <div class="col-12 col-md-7 col-lg-6">
+                    <div class="row g-3">
+
+                        <!-- Roller Shutter Repairs -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80"
+                                        width="100%" height="auto" alt="Roller Shutter Repairs" class="svc-img" />
+                                    <div class="svc-icon-badge"><i class="bi bi-wrench-adjustable"></i></div>
+                                </div>
+                                <div class="p-3">
+                                    <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Roller Shutter Repairs
+                                    </h6>
+                                    <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Same-day
+                                        callouts for all shutter types</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Industrial Doors -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+                                        width="100%" height="auto" alt="Industrial Doors" class="svc-img" />
+                                    <div class="svc-icon-badge"><i class="bi bi-building"></i></div>
+                                </div>
+                                <div class="p-3">
+                                    <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Industrial Doors</h6>
+                                    <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Sectional,
+                                        high-speed & heavy-duty solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fire & Steel Doors -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                                        width="100%" height="auto" alt="Fire & Steel Doors" class="svc-img" />
+                                    <div class="svc-icon-badge"><i class="bi bi-fire"></i></div>
+                                </div>
+                                <div class="p-3">
+                                    <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Fire & Steel Doors</h6>
+                                    <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Certified fire
+                                        doors, steel personnel doors & inspections</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automatic Doors -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+                                        width="100%" height="auto" alt="Automatic Doors" class="svc-img" />
+                                    <div class="svc-icon-badge"><i class="bi bi-arrows-expand"></i></div>
+                                </div>
+                                <div class="p-3">
+                                    <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Automatic Doors</h6>
+                                    <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Commercial
+                                        automatic door systems</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Planned Maintenance -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80"
+                                        width="100%" height="auto" alt="Planned Maintenance" class="svc-img" />
+                                    <div class="svc-icon-badge"><i class="bi bi-gear-fill"></i></div>
+                                </div>
+                                <div class="p-3">
+                                    <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Planned Maintenance
+                                    </h6>
+                                    <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">PPM contracts
+                                        with digital reporting</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PPM Promo Card -->
+                        <div class="col-12 col-sm-6">
+                            <div class="svc-card h-100 rounded-3 d-flex flex-column justify-content-center p-4"
+                                style="background:#f0fdf4; border:1.5px solid #bbf7d0;">
+                                <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 w-100 h-auto py-1 mb-3 fw-bold"
+                                    style="width:fit-content;">
+                                    <i class="bi bi-arrow-repeat"></i> PPM CONTRACTS
+                                </div>
+                                <h6 class="fw-bold mb-2 text-dark" style="font-size:15px; line-height:1.4;">Stop Paying
+                                    for Emergencies</h6>
+                                <p class="text-muted mb-3" style="font-size:13px; line-height:1.55;">Planned maintenance
+                                    catches problems before they cost you</p>
+                                <a href="#"
+                                    class="fw-semibold text-success text-decoration-none d-flex align-items-center gap-1"
+                                    style="font-size:13.5px;">
+                                    Get a maintenance quote <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="py-5 overflow-hidden" style="background:#1a2744;">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-3 fw-bold"
+                    style="background:rgba(255,255,255,.1); color:#fff; font-size:11.5px; letter-spacing:1.5px; border:1px solid rgba(255,255,255,.15);">
+                    <span style="color:#c8102e;">1,200+</span>&nbsp; UK SITES UNDER CONTRACT
+                </div>
+                <p class="fw-semibold mb-0" style="color:rgba(255,255,255,.85); font-size:16px;">
+                    Trusted by Facilities Teams Who Can't Afford Downtime
+                </p>
+            </div>
+        </div>
+
+        <!-- Full-width edge-to-edge marquee -->
+        <div class="marquee-wrap" style="overflow:hidden; padding:8px 0;">
+            <div class="d-flex marquee-track">
+
+                <!-- SET 1 -->
+                <div class="d-flex align-items-center">
+                    <img src="images/home/british.png" alt="Wickes" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/savills.png" alt="Savills" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/stark.png" alt="Stark" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/jewson.png" alt="Jewson" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/macro-logo.png" alt="Micro" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/sports-direct.png" alt="Sports Direct" class="img-fluid"
+                        style="max-height:45px;">
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <img src="images/home/savills.png" alt="Savills" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/stark.png" alt="Stark" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/jewson.png" alt="Jewson" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/macro-logo.png" alt="Micro" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/british-land.png" alt="British Land" class="img-fluid"
+                        style="max-height:45px;">
+                </div>
+
+
+                <!-- SET 1 -->
+                <div class="d-flex align-items-center">
+                    <img src="images/home/wickes.png" alt="Wickes" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/savills.png" alt="Savills" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/stark.png" alt="Stark" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/jewson.png" alt="Jewson" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/micro.png" alt="Micro" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/sports-direct.png" alt="Sports Direct" class="img-fluid"
+                        style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/british-land.png" alt="British Land" class="img-fluid"
+                        style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/ng-bailey.png" alt="NG Bailey" class="img-fluid" style="max-height:40px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/hm.png" alt="H&M" class="img-fluid" style="max-height:50px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/cineworld.png" alt="Cineworld" class="img-fluid" style="max-height:45px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/cmo.png" alt="CMO Contracts" class="img-fluid" style="max-height:40px;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/home/nhs.png" alt="NHS" class="img-fluid" style="max-height:50px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
