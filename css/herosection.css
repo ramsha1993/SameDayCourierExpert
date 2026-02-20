@@ -150,3 +150,11 @@
 .bg-secondary{
     background-color: var(--secondary)!important;
 }
+.logo-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
