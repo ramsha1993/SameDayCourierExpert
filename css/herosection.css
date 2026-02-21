@@ -206,3 +206,84 @@
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
+
+.custom-row{
+    height: 700px!important;
+
+}
+    @media (max-width:768px){
+  .custom-row {
+    min-height: auto;
+    overflow: hidden;
+                  }
+    }
+
+    .box{
+        height: 200px;
+    }
+ 
+    /* Custom height and layout adjustments */
+    .testimonial-slider {
+        width: 100%;
+        display: block;
+        position:relative;
+        overflow: hidden;
+    }
+.testimonial-stars i {
+    font-size: 1.1rem; /* Adjust this to match your design scale */
+    margin-right: 2px;  /* Subtle gap between stars */
+}
+    /* Ensure cards have equal height during translation */
+    .testimonial-slider .slick-track {
+        display: flex !important;
+    }
+
+    .testimonial-slider .slick-slide {
+        height: auto;
+        display: flex !important;
+        justify-content: center;
+    }
+        @media(max-width:1024px){
+        .testimonial-slider .slick-slide{
+        max-height: 600px!important;
+                padding:0 !important;
+            }
+    }
+
+
+    /* Optional: Smooth transition timing */
+    .slick-list {
+        border-radius: 1rem; /* Matches card rounding */
+    }
+
+.container-wide{
+    max-width: 1200px;
+   margin: auto auto;
+}
+
+
+ @media(max-width:1024px){
+        .container-wide{
+             max-width: 850px;
+        }
+    }
+    @media(max-width:768px){
+        .container-wide{
+             max-width: 600px;
+        }
+    }
+        
+
+    /* Mobile Alignment (Matches your 500px query) */
+@media(max-width: 500px) {
+    .container-wide {
+        max-width: 300px !important;
+        margin: auto;
+    }
+}
+
+.font{
+    font-size: 50px;
+}
+
+ 

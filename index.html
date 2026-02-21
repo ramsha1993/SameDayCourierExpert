@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/">
     <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.css">
-
+<link rel="stylesheet" href="./css/slick-theme.less"/>
+<link rel="stylesheet" href="./css/slick.less"/>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/herosection.css">
@@ -17,6 +18,10 @@
 </head>
 
 <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script src="./js/index.js "></script>
+ <script src="./js/slick.min.js "></script>
     <div class="top-bar py-2">
         <div class="container d-flex justify-content-between align-items-center">
             <span>Professional Door Solutions Nationwide</span>
@@ -447,11 +452,11 @@
             </div>
 
             <!-- Grid -->
-            <div class="row g-4">
+            <div class="row g-4 custom-row">
 
                 <!-- ── COL 1: Emergency Featured Card ── -->
-                <div class="col-12 col-md-5 col-lg-6">
-                    <div class="emerg-card d-flex flex-column justify-content-end p-4 h-100" style="min-height:460px;">
+                <div class="col-12 col-md-5 col-lg-6 h-100">
+                    <div class="emerg-card d-flex flex-column justify-content-end p-4 h-100" >
                         <div class="position-relative z-1">
 
                             <!-- Badge -->
@@ -499,18 +504,19 @@
                 </div>
 
                 <!-- ── COL 2: Service Cards Grid ── -->
-                <div class="col-12 col-md-7 col-lg-6">
-                    <div class="row g-3">
+                <div class="col-12 col-md-7 col-lg-6  h-100">
+                    <div class="row g-3 h-100">
 
                         <!-- Roller Shutter Repairs -->
-                        <div class="col-12 col-sm-6">
-                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
-                                <div class="position-relative">
+                        <div class="col-12 col-sm-6 h-24">
+                            <div class="svc-card bg-white border rounded-3 h-100 overflow-hidden shadow-sm">
+                                <div class="position-relative scale-in ">
                                     <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80"
-                                        width="100%" height="auto" alt="Roller Shutter Repairs" class="svc-img" />
-                                    <div class="svc-icon-badge"><i class="bi bi-wrench-adjustable"></i></div>
+                                        width="100%" height="100px" alt="Roller Shutter Repairs" class="svc-img" />
                                 </div>
-                                <div class="p-3">
+                                <div class="p-3 ">
+                                    <div class="svc-icon-badge"><i class="bi bi-wrench-adjustable"></i></div>
+
                                     <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Roller Shutter Repairs
                                     </h6>
                                     <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Same-day
@@ -520,14 +526,15 @@
                         </div>
 
                         <!-- Industrial Doors -->
-                        <div class="col-12 col-sm-6">
-                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
+                        <div class="col-12 col-sm-6  h-24">
+                            <div class="svc-card bg-white border  rounded-3 overflow-hidden h-100 shadow-sm">
                                 <div class="position-relative">
                                     <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
-                                        width="100%" height="auto" alt="Industrial Doors" class="svc-img" />
-                                    <div class="svc-icon-badge"><i class="bi bi-building"></i></div>
+                                        width="100%" height="100px" alt="Industrial Doors" class="svc-img" />
                                 </div>
                                 <div class="p-3">
+                                                                        <div class="svc-icon-badge"><i class="bi bi-building"></i></div>
+
                                     <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Industrial Doors</h6>
                                     <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Sectional,
                                         high-speed & heavy-duty solutions</p>
@@ -536,14 +543,15 @@
                         </div>
 
                         <!-- Fire & Steel Doors -->
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 h-24">
                             <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
                                 <div class="position-relative">
                                     <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
-                                        width="100%" height="auto" alt="Fire & Steel Doors" class="svc-img" />
-                                    <div class="svc-icon-badge"><i class="bi bi-fire"></i></div>
+                                        width="100%" height="100px" alt="Fire & Steel Doors" class="svc-img" />
                                 </div>
                                 <div class="p-3">
+                                    <div class="svc-icon-badge"><i class="bi bi-fire"></i></div>
+
                                     <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Fire & Steel Doors</h6>
                                     <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">Certified fire
                                         doors, steel personnel doors & inspections</p>
@@ -552,11 +560,11 @@
                         </div>
 
                         <!-- Automatic Doors -->
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 h-24">
                             <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
                                 <div class="position-relative">
                                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
-                                        width="100%" height="auto" alt="Automatic Doors" class="svc-img" />
+                                        width="100%" height="100px" alt="Automatic Doors" class="svc-img" />
                                     <div class="svc-icon-badge"><i class="bi bi-arrows-expand"></i></div>
                                 </div>
                                 <div class="p-3">
@@ -568,14 +576,16 @@
                         </div>
 
                         <!-- Planned Maintenance -->
-                        <div class="col-12 col-sm-6">
-                            <div class="svc-card bg-white border rounded-3 overflow-hidden h-100 shadow-sm">
-                                <div class="position-relative">
+                        <div class="col-12 col-sm-6 h-25">
+                            <div class="svc-card bg-white border rounded-3 overflow-hidden d-flex d-flex-col shadow-sm">
+                                <div class="position-relative  flex-grow-1">
                                     <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80"
-                                        width="100%" height="auto" alt="Planned Maintenance" class="svc-img" />
-                                    <div class="svc-icon-badge"><i class="bi bi-gear-fill"></i></div>
-                                </div>
-                                <div class="p-3">
+                                        width="100%" height="100%" alt="Planned Maintenance" class="svc-img" />
+                                                                                                   <div class="svc-icon-badge position-absolute bg-danger px-2 py-1 rounded-3   "  style="left:10px;bottom:10px;"><i class="bi bi-gear-fill " style="color:white"></i></div>
+
+                                    </div>
+                                <div class="p-3  h-25">
+
                                     <h6 class="fw-bold mb-1 text-dark" style="font-size:14.5px;">Planned Maintenance
                                     </h6>
                                     <p class="text-muted mb-0" style="font-size:13px; line-height:1.5;">PPM contracts
@@ -585,7 +595,7 @@
                         </div>
 
                         <!-- PPM Promo Card -->
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 h-24">
                             <div class="svc-card h-100 rounded-3 d-flex flex-column justify-content-center p-4"
                                 style="background:#f0fdf4; border:1.5px solid #bbf7d0;">
                                 <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 w-100 h-auto py-1 mb-3 fw-bold"
@@ -796,8 +806,152 @@
 </div> 
 </section>
 
-<!-- ===== Stay Connected Band ===== -->
 
+<section class="testimonial-section py-5 bg-light">
+    <div class="container-wide ">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h6 class="text-danger  text-uppercase small">Testimonials</h6>
+                <h2 class="display-6  fw-extrabold font mb-3">Trusted by <br><span class="text-danger">UK businesses</span></h2>
+                <p class="text-muted">From retail chains to healthcare trusts, see why facilities managers choose CRB.</p>
+                 
+                <div class="d-flex align-items-center mt-4">
+                    <button class="btn btn-outline-secondary rounded-circle me-2 prev-btn" style="width:45px; height:45px;"><i class="bi bi-arrow-left"></i></button>
+                    <button class="btn btn-outline-secondary rounded-circle me-3 next-btn" style="width:45px; height:45px;"><i class="bi bi-arrow-right"></i></button>
+                    <span class="text-muted small"><span class="current-slide">1</span> / 4</span>
+                </div>
+                
+                <div class="progress mt-4" style="height: 4px; width: 80%;">
+                    <div class="progress-bar bg-danger" id="slider-progress" role="progressbar" style="width: 25%;"></div>
+                </div>
+            </div>
+
+        <div class="col-12 col-lg-8">
+    <div class="testimonial-slider ">
+        
+        <div class="slide-item px-4">
+            <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100  d-flex flex-column justify-content-between">
+               <div class="testimonial-stars mb-3">
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+</div>
+                <p class="fs-6   fs-md-4 fw-semibold text-dark mb-4">
+"I've worked with CRB Doors for many years and their service is outstanding from start to finish. Communication, reliability, and workmanship are exceptional—they turn up when promised and deliver on schedule without fuss."                </p>
+                <hr class="my-4 opacity-25">
+                <div class="d-flex flex-md-row flex-column gap-2 justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width:50px; height:50px;">M</div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Mark Hitchens</h6>
+                            <p class="small text-muted mb-0">Rotherham United Football Club</p>
+                        </div>
+                    </div>
+                    <div class="bg-danger-subtle px-4 py-2 rounded d-flex flex-column align-items-end">
+                        <h4 class="text-danger fw-bold mb-0" style="font-family: fonttwo;">2 sites</h4>
+                        <span class="text-uppercase " style="color:gray;font-size: 12px;">stadium & training ground
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-item  px-4">
+            <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100  d-flex flex-column justify-content-between">
+               <div class="testimonial-stars mb-3">
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+</div>
+                <p class="fs-6   fs-md-4 fw-semibold  text-dark mb-4">
+                    "Exceptional communication and reliability. They turn up when promised and deliver on schedule."
+                </p>
+                <hr class="my-4 opacity-25">
+               <div class="d-flex flex-md-row flex-column gap-2 justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width:50px; height:50px;">M</div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Mark Hitchens</h6>
+                            <p class="small text-muted mb-0">Rotherham United Football Club</p>
+                        </div>
+                    </div>
+                    <div class="bg-danger-subtle px-4 py-2 rounded d-flex flex-column align-items-end">
+                        <h4 class="text-danger fw-bold mb-0" style="font-family: fonttwo;">2 sites</h4>
+                        <span class="text-uppercase " style="color:gray;font-size: 12px;">stadium & training ground
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="slide-item px-4">
+            <div class="card border-0 shadow-sm p-4 p-md-5 d-flex flex-column justify-content-between rounded-4 h-100">
+               <div class="testimonial-stars mb-3">
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+</div>                <p class="fs-6   fs-md-4 fw-semibold  text-dark mb-4">
+                    "Exceptional communication and reliability. They turn up when promised and deliver on schedule."
+                </p>
+                <hr class="my-4 opacity-25">
+                 <div class="d-flex flex-md-row flex-column gap-2 justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width:50px; height:50px;">M</div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Mark Hitchens</h6>
+                            <p class="small text-muted mb-0">Rotherham United Football Club</p>
+                        </div>
+                    </div>
+                    <div class="bg-danger-subtle px-4 py-2 rounded d-flex flex-column align-items-end">
+                        <h4 class="text-danger fw-bold mb-0" style="font-family: fonttwo;">2 sites</h4>
+                        <span class="text-uppercase " style="color:gray;font-size: 12px;">stadium & training ground
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="slide-item px-4">
+            <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100  d-flex flex-column justify-content-between">
+               <div class="testimonial-stars mb-3">
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+    <i class="bi bi-star-fill text-danger"></i>
+</div>                <p class="fs-6   fs-md-4 fw-semibold  text-dark mb-4">
+"I've worked with CRB Doors for many years and their service is outstanding from start to finish. Communication, reliability, and workmanship are exceptional—they turn up when promised and deliver on schedule without fuss."                </p>
+                </p>
+                <hr class="my-4 opacity-25">
+                  <div class="d-flex flex-md-row flex-column gap-2 justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width:50px; height:50px;">M</div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Mark Hitchens</h6>
+                            <p class="small text-muted mb-0">Rotherham United Football Club</p>
+                        </div>
+                    </div>
+                    <div class="bg-danger-subtle px-4 py-2 rounded d-flex flex-column align-items-end">
+                        <h4 class="text-danger fw-bold mb-0" style="font-family: fonttwo;">2 sites</h4>
+                        <span class="text-uppercase " style="color:gray;font-size: 12px;">stadium & training ground
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Stay Connected Band ===== -->
     <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
