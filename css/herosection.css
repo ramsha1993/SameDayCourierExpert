@@ -689,3 +689,33 @@
     @media (prefers-reduced-motion:reduce){
       .accredit-logo{transition:none}
     }
+
+   /* Base Badge Style */
+.sla-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 18px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+/* Individual Colors based on Image */
+.badge-p1 { background: #fff1f0; color: #ff4d4f; border-color: #ffccc7; } /* Red */
+.badge-p2 { background: #fff7e6; color: #faad14; border-color: #ffe58f; } /* Orange */
+.badge-p3 { background: #fff1f0; color: #f5222d; border-color: #ffa39e; } /* Soft Red */
+.badge-p4 { background: #e6f7ff; color: #1890ff; border-color: #91d5ff; } /* Blue */
+.badge-p5 { background: #f0f5ff; color: #2f54eb; border-color: #adc6ff; } /* Indigo */
+.badge-p6 { background: #f6ffed; color: #52c41a; border-color: #b7eb8f; } /* Green */
+
+/* Typography */
+.fw-extrabold { font-weight: 800; }
+
+.sla-card {
+    transition: transform 0.2s ease-in-out;
+}
+.sla-card:hover {
+    transform: translateY(-5px);
+}
