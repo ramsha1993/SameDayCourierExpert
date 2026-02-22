@@ -36,6 +36,11 @@
            --acc-bg:#fff7f3;
       --acc-border:#e5e7eb;
       --acc-text:#4b5563;
+      --ft-bg:#0d1b2e;
+      --ft-bottom: #091525;
+      --ft-muted:  rgba(255,255,255,.55);
+      --accent:    #e8312a;
+    
  }
 
 
@@ -308,10 +313,6 @@
         max-width: 300px !important;
         margin: auto;
     }
-}
-
-.font{
-    font-size: 50px;
 }
 
  
@@ -719,3 +720,340 @@
 .sla-card:hover {
     transform: translateY(-5px);
 }
+
+
+
+
+
+    /* Custom typefaces */
+    .site-footer  { font-family: 'Barlow', sans-serif; }
+    .footer-heading { font-family: 'Barlow Condensed', sans-serif; }
+
+    /* Gradient accent bar — Bootstrap bg ut
+    ilities are solid only */
+    .footer-accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent) 0%, #c0392b 100%);
+    }
+
+    /* Heading underline pseudo-element */
+    .footer-heading {
+      position: relative;
+      padding-bottom: .6rem;
+    }
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 28px; height: 2px;
+      border-radius: 2px;
+    }
+
+    /* Link hover slide — CSS micro-interaction */
+    .footer-links a { transition: color .2s, padding-left .2s; }
+    .footer-links a:hover { color: #fff !important; padding-left: 4px; }
+
+    /* Social button hover */
+    .social-btn {
+      width: 36px; height: 36px;
+      border: 1.5px solid rgba(255,255,255,.25);
+      transition: background .25s, border-color .25s, color .25s;
+    }
+    .social-btn:hover {
+      background: var(--accent) !important;
+      border-color: var(--accent) !important;
+      color: #fff !important;
+    }
+
+    /* Contact icon tinted badge */
+    .contact-icon {
+      width: 34px; height: 34px;
+     
+      flex-shrink: 0;
+    }
+
+    /* Hover colour on contact & bottom links */
+    .contact-item a:hover,
+    .footer-bottom-links a:hover { color: #fff !important; }
+    .contact-item a,
+    .footer-bottom-links a { transition: color .2s; }
+
+/* ── Section label ── */
+    .section-label {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ── Section heading ── */
+    .section-heading {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: #111827;
+      line-height: 1.1;
+    }
+
+    /* ── View all link ── */
+    .view-all-link {
+      font-size: .875rem;
+      font-weight: 600;
+      color: #374151;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+    .view-all-link:hover { color: var(--accent); }
+
+    /* ════════════════════════════════
+       HERO CARD (left large card)
+    ════════════════════════════════ */
+    .hero-card {
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      position: relative;
+      min-height: 460px;
+      cursor: pointer;
+    }
+
+    /* Image zoom on hover — overflow:hidden on parent clips it */
+    .hero-card .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition);
+      will-change: transform;
+    }
+    .hero-card:hover .hero-img { transform: scale(1.06); }
+
+    /* Dark gradient overlay */
+    .hero-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,.82) 0%,
+        rgba(0,0,0,.35) 55%,
+        transparent 100%
+      );
+      pointer-events: none;
+    }
+
+    .hero-card-body {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+
+    .badge-response {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      background: var(--accent);
+      color: #fff;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .3rem .65rem;
+      border-radius: 20px;
+      width: fit-content;
+    }
+
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+    }
+
+    .hero-desc {
+      font-size: .875rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.55;
+      max-width: 28ch;
+    }
+
+    /* SLA / response pills */
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      font-size: .75rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.9);
+    }
+    .meta-pill .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+    }
+
+    /* CTA buttons */
+    .btn-hero-primary {
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: .85rem;
+      padding: .5rem 1.1rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .btn-hero-primary:hover {
+      background: var(--accent-dark);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .btn-hero-ghost {
+      background: rgba(255,255,255,.12);
+      border: 1.5px solid rgba(255,255,255,.35);
+      color: #fff;
+      font-weight: 600;
+      font-size: .85rem;
+      padding: .5rem 1.1rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+      transition: background .2s, border-color .2s, transform .15s;
+    }
+    .btn-hero-ghost:hover {
+      background: rgba(255,255,255,.22);
+      border-color: rgba(255,255,255,.6);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* ════════════════════════════════
+       SERVICE CARDS (right grid)
+    ════════════════════════════════ */
+    .service-card {
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+      transition: box-shadow .25s, transform .25s;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+    .service-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,.12);
+      transform: translateY(-3px);
+      color: inherit;
+    }
+
+    /* Image wrapper clips the zoom */
+    .service-card .img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 130px;
+    }
+    .service-card .img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition);
+      will-change: transform;
+      display: block;
+    }
+    .service-card:hover .img-wrap img { transform: scale(1.08); }
+
+    /* Icon badge over image */
+    .img-icon {
+      position: absolute;
+      bottom: .6rem;
+      left: .6rem;
+      width: 30px; height: 30px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-size: .85rem;
+      z-index: 2;
+    }
+
+    .service-card .card-body-text {
+      padding: .75rem .9rem .9rem;
+    }
+    .service-card .card-title {
+      font-weight: 700;
+      font-size: .9rem;
+      color: #111827;
+      margin-bottom: .25rem;
+      line-height: 1.3;
+    }
+    .service-card .card-desc {
+      font-size: .78rem;
+      color: var(--text-muted-c);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ════════════════════════════════
+       PPM CONTRACTS PROMO CARD
+    ════════════════════════════════ */
+    .ppm-card {
+      border-radius: var(--card-radius);
+      background: #f0fdf4;
+      border: 1.5px solid #bbf7d0;
+      padding: 1rem 1.1rem 1.1rem;
+      height: 100%;
+    }
+    .badge-ppm {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      background: #16a34a;
+      color: #fff;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .28rem .65rem;
+      border-radius: 20px;
+    }
+    .ppm-title {
+      font-weight: 700;
+      font-size: .95rem;
+      color: #111827;
+      line-height: 1.3;
+    }
+    .ppm-desc {
+      font-size: .8rem;
+      color: var(--text-muted-c);
+      line-height: 1.5;
+      margin: 0;
+    }
+    .ppm-link {
+      font-size: .8rem;
+      font-weight: 700;
+      color: #16a34a;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      transition: gap .2s, color .2s;
+    }
+    .ppm-link:hover { color: #15803d; gap: .5rem; }
+
+    /* ── Responsive: stack hero on mobile ── */
+    @media (max-width: 767.98px) {
+      .hero-card { min-height: 360px; }
+    }

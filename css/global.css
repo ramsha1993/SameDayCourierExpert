@@ -35,3 +35,20 @@ h2,h3,h5 {
         font-size: calc(1.275rem + 0.3vw) !important; /* Matches Bootstrap's fs-4 */
     }
 }
+
+.ff-heading { font-family: 'fonttwo', sans-serif !important; }
+
+
+.font{
+    font-size: 50px;
+}
+.font-one{
+    font-size:18px
+}
+.font-two{
+    font-size: 20px;
+}
+
+.font-three{
+    font-size: 22px;
+}
